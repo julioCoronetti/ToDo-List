@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--gray-700);
+    background: var(--gray-500);
+    width: 100%;
+}

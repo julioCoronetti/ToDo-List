@@ -1,0 +1,21 @@
+.content {
+    max-width: 46rem;
+    width: 100%;
+
+    margin: 0 auto;
+}
+
+.newTaskContainer {
+    display: flex;
+    flex: 1;
+
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.newTaskContainer input,
+.newTaskContainer button {
+    transform: translateY(-50%);
+
+    margin-bottom: 2.3125rem;
+}
