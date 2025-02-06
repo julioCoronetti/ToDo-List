@@ -1,0 +1,25 @@
+.content {
+    width: 100%;
+    display: flex;
+    padding: 4rem 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-top: 2px solid var(--gray-300);
+    margin-top: 1.5rem;
+    border-radius: 8px;
+}
+
+.paragraphEmpty {
+    color: var(--gray-300);
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.paragraphEmpty span:nth-child(1) {
+    font-weight: bold;
+}
