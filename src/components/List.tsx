@@ -4,7 +4,7 @@ import { Item } from "./Item.tsx";
 import { Empty } from "./Empty.tsx";
 
 export function List() {
-    const tasks = [];
+    const tasks = [1, 2, 3, 4, 5, 6, 7];
     const completedTasks = []; // só pra testar
 
     return (
@@ -27,7 +27,9 @@ export function List() {
 
             <ul className={styles.listContainer}>
                 {tasks.length > 0 ?
-                    <Item /> :
+                    tasks.map(() => {
+                        return <Item />
+                    }) :
                     <Empty />
                 }
             </ul>

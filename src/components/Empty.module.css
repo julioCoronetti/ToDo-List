@@ -7,7 +7,6 @@
     align-items: center;
     gap: 1rem;
     border-top: 2px solid var(--gray-300);
-    margin-top: 1.5rem;
     border-radius: 8px;
 }
 
