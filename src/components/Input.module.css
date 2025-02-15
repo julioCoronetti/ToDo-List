@@ -7,4 +7,10 @@
     border: 1px solid var(--gray-700);
     background: var(--gray-500);
     width: 100%;
+
+    color: var(--gray-100);
+}
+
+.container:focus {
+    border-color: var(--purple-dark);
 }

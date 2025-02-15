@@ -7,7 +7,7 @@ type Props = React.DetailedHTMLProps<
 
 export function Button({ children, ...props }: Props) {
     return (
-        <button {...props} className={styles.container}>
+        <button {...props} className={styles.container} onClick={props.onClick}>
             {children}
         </button>
     )

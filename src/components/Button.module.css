@@ -19,4 +19,10 @@
     font-size: 0.875rem;
 
     transition: 0.2s;
+
+    cursor: pointer;
+}
+
+.container:hover {
+    background-color: var(--blue);
 }

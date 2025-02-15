@@ -30,6 +30,7 @@
     align-items: center;
     justify-content: center;
 
+    cursor: pointer;
 }
 
 .checkbox-unchecked {
@@ -54,6 +55,9 @@
     font-size: 0.875rem;
     line-height: 140%;
     user-select: none;
+    text-align: start;
+    width: 100%;
+    padding: 0 1rem;
 
     transition: 0.2s all;
 }

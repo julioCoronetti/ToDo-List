@@ -2,22 +2,50 @@ import { Check, Trash } from "phosphor-react"
 
 import styles from "./Item.module.css"
 
-export function Item() {
+interface ItemProps {
+    id: number;
+    textTask: string;
+    isCompleted: boolean;
+    toggleTaskStatus: ({ id, value }: { id: number; value: boolean }) => void
+    removeTask: (id: number) => void
+}
+
+export function Item({ id, textTask, isCompleted, toggleTaskStatus, removeTask }: ItemProps): JSX.Element {
+
+    function handleTaskToggle() {
+        toggleTaskStatus({ id, value: !isCompleted })
+    }
+
+    const checkboxCheckedClassname = isCompleted
+        ? styles['checkbox-checked']
+        : styles['checkbox-unchecked'];
+    const paragraphCheckedClassname = isCompleted
+        ? styles['paragraph-checked']
+        : '';
+
+    function handleRemove() {
+        removeTask(id);
+    }
 
     return (
 
-        <li className={styles.container}>
-            <label htmlFor="checkbox">
-                <input type="checkbox" />
-                <span className={`${styles.checkBox} ${styles['checkbox-checked']}`}>
-                    {<Check size={12} />}
+        <li className={styles.container} key={id}>
+            <label htmlFor={`checkbox-${id}`}>
+                <input
+                    type="checkbox"
+                    id={`checkbox-${id}`}
+                    checked={isCompleted}
+                    onChange={handleTaskToggle}
+                />
+                <span className={`${styles.checkBox} ${checkboxCheckedClassname}`}>
+                    {isCompleted && <Check size={12} />}
                 </span>
             </label>
-            <p className={`${styles.paragraph} ${styles['paragraph-checked']}`}>
-                Item
+            <p className={`${styles.paragraph} ${paragraphCheckedClassname}`}>
+                {textTask}
             </p>
-            <button>
-                <Trash size={16} color="#808080" />
+            <button onClick={handleRemove}>
+                <Trash size={20} color="#808080" />
             </button>
         </li>
     )
