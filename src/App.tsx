@@ -38,6 +38,10 @@ export function App() {
 
   function handleNewTask(event: React.FormEvent) {
     event.preventDefault();
+    if (newTaskText.trim() === '') {
+      alert("Insira um texto para a tarefa!");
+      return;
+    }
     const newTask = {
       id: tasks.length + 1,
       text: newTaskText,
