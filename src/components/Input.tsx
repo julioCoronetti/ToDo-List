@@ -15,6 +15,7 @@ export function Input({ value, onChange }: InputProps) {
             className={styles.container}
             onChange={onChange}
             value={value}
+            id="taskInput"
        />
     )
 }

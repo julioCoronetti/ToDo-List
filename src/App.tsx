@@ -49,7 +49,6 @@ export function App() {
     }
     setTasks([...tasks, newTask]);
     setNewTaskText('');
-    console.log(tasks);
   }
 
   return (
@@ -57,7 +56,7 @@ export function App() {
       <Header />
       <section className={styles.content}>
 
-        <form onSubmit={handleNewTask} className={styles.newTaskContainer}>
+        <form name="taskForm" onSubmit={handleNewTask} className={styles.newTaskContainer}>
           <Input onChange={handleNewTaskChange} value={newTaskText} />
           <Button type="submit">
             Criar

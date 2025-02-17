@@ -4,13 +4,17 @@
     align-items: center;
     gap: 0.5rem;
     border-radius: 8px;
-    border: 1px solid var(--gray-700);
+    border: 1px solid var(--purple);
     background: var(--gray-500);
     width: 100%;
 
-    color: var(--gray-100);
+    color: var(--purple-dark);
 }
 
 .container:focus {
     border-color: var(--purple-dark);
+}
+
+::-webkit-input-placeholder {
+    color: var(--purple);
 }

@@ -38,14 +38,14 @@ export function Item({ id, textTask, isCompleted, toggleTaskStatus, removeTask }
                     onChange={handleTaskToggle}
                 />
                 <span className={`${styles.checkBox} ${checkboxCheckedClassname}`}>
-                    {isCompleted && <Check size={12} />}
+                    {isCompleted && <Check size={12} color="#ffffff" />}
                 </span>
             </label>
             <p className={`${styles.paragraph} ${paragraphCheckedClassname}`}>
                 {textTask}
             </p>
             <button onClick={handleRemove}>
-                <Trash size={20} color="#808080" />
+                <Trash size={20} color="#e9532e" />
             </button>
         </li>
     )
