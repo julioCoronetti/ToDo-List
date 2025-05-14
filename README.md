@@ -15,3 +15,11 @@ This project is a **To-Do List app** built with **React**, **TypeScript**, and *
 - **React**: For building the user interface.
 - **TypeScript**: Ensures a robust and scalable codebase.
 - **Styled-Components**: Enables modular and dynamic styling.
+
+## 💻 Link to Website
+
+[Access the website here](https://juliocoronetti-todo-list.vercel.app)
+
+## ⚖ License
+
+This project is licensed under the MIT License.
