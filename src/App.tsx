@@ -64,7 +64,7 @@ export function App() {
           </Button>
         </form>
 
-        <div>
+        <div className={styles.listContainer}>
           <List tasks={tasks} toggleTaskStatus={toggleTaskStatus} removeTask={removeTask} />
         </div>
       </section>

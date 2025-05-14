@@ -11,6 +11,7 @@
 
     justify-content: space-between;
     gap: 0.5rem;
+    padding: 0 20px ;
 }
 
 .newTaskContainer input,
@@ -18,4 +19,8 @@
     transform: translateY(-50%);
 
     margin-bottom: 2.3125rem;
+}
+
+.listContainer {
+    padding: 0 20px;
 }
